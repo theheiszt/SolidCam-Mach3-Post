@@ -25,10 +25,10 @@ alt="video" width="480" height="360" border="10" /></a>
  - 5 axis - working
  - Drill cycles - G81 (drill), G82 (drill+dwell), G83 (peck drilling), Canned cycles: G85 (boring), G86 (bore and stop), G89 (in, dwell, out)
  - Tapping seems to work
+ - Tool offsets and cutter compensation supported
  
 ## TODO :
  - 4x indexial use may need some more work to avoid unnecessary retracts to clearance. As of now it's safe but can be made faster w/o retracts.
- - Tool offsets and compensation
 
 ## Installation and usage notes :
  - Put the .gpp and .vmid files in `C:\Users\Public\Documents\SolidCAM\SolidCAMXXXX\Gpptool`. You need to restart SolidWorks for it to pick up the new files.
