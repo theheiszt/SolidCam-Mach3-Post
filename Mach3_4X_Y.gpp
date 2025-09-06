@@ -324,8 +324,10 @@ endp
     
     {nb, '(Tool # 'tool_number,' - Diameter 'tool_diameter,' D'tool_number,' H'tool_number, ')'}
 
+    {nb, 'G49'}
     mcode = 6
-    {nb, 'T'tool_number,' M' mcode' D'tool_number ' H'tool_number}
+    {nb, 'T'tool_number,' M' mcode}
+    {nb, 'G43 H'tool_number}
     call @start_tool
     call @home_number
 endp
