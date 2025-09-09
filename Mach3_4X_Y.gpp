@@ -430,8 +430,11 @@ endp
 ;--------------------
 
 @start_of_job
-    ;{nb, '( ---- Start of 'job_name' ---- )'}
+endp
 
+;--------------------
+
+@start_of_path
     if msg ne ''
         {nb, '('msg, ')'}
     endif
@@ -444,13 +447,13 @@ endp
         use_sc_feeds = FALSE
     endif
 
-;    if fourth_axis_used eq false and rotate_used eq false then 
+;    if fourth_axis_used eq false and rotate_used eq false then
 ;        {nb, 'G0 Z'(tool_z_level):'5.3(p)', '  ; move up to tool_z_level'}
-        
+
 ;        ;{nb, 'G0 Z'clearance_level, '; clearance_level'}
-        
+
 ;        ;{nb, 'G0 G53 Z0'}
-        
+
 ;        ;{nb, 'G0 G53 A'(angle_4x_around_y):'5.3(p)'}
 ;    endif
 
@@ -459,7 +462,7 @@ endp
 ;--------------------
 
 @end_of_job
-    {nb, '( ---- End of 'job_name' ---- )'}  
+    {nb, '( ---- End of 'job_name' ---- )'}
 endp
 
 ;--------------------
